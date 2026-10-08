@@ -12,13 +12,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t Deeksha-03120/personal-profile:latest .'
+                bat '"C:\\Users\\SENTHIL\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t Deeksha-03120/personal-profile:latest .'
             }
         }
 
         stage('Push Docker Image') {
             steps {
-                bat 'docker push Deeksha-03120/personal-profile:latest'
+                bat '"C:\\Users\\SENTHIL\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" push Deeksha-03120/personal-profile:latest'
             }
         }
 
